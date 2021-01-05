@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block main %}
+   <h3>{{book_shelf.title}}</h3>
+   <h3>{{ book_shelf.body}}</h3>
+   <a href="{% url 'update' book_shelf.pk %}">Update</a>
+   <a href="{% url 'delete' book_shelf.pk %}">Delete</a>
+{% endblock main %}
